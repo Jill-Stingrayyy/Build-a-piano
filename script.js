@@ -9,7 +9,8 @@ function playNote(key) {
     noteAudio.currentTime = 0;
     noteAudio.play();
     key.classList.add('active');
-}
-noteAudio.addEventListener('ended', () => {
+    noteAudio.addEventListener('ended', () => {
     key.classList.remove(active);
 })
+}
+
